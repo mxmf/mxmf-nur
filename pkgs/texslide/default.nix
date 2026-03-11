@@ -30,6 +30,7 @@ appimageTools.wrapType2 {
 
   extraInstallCommands = ''
     install -Dm444 ${appimageContents}/${pname}.desktop -t $out/share/applications/
+    install -Dm444 ${appimageContents}/${pname}.png -t $out/share/pixmaps/
   '';
 
   meta = {
