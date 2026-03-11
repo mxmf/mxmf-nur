@@ -6,12 +6,15 @@
 
 let
   version = "0.9.3";
-  pname = "texsilde";
+  pname = "texslide";
 
   src = fetchurl {
     url = "https://download.texslide.com/release/texslide-x64.AppImage";
     hash = "sha256-98sBK0g3M9FTqS2uSCuYulwHBV+eNNceW1P5ylioEQQ=";
   };
+
+
+  appimageContents = appimageTools.extractType1 { inherit pname src version; };
 
 in
 appimageTools.wrapType2 {
@@ -25,6 +28,9 @@ appimageTools.wrapType2 {
   '';
 
 
+  extraInstallCommands = ''
+    install -Dm444 ${appimageContents}/${pname}.desktop -t $out/share/applications/
+  '';
 
   meta = {
     description = "TexSlide empowers scholars, engineers, and educators to present complex formulas and charts with ease.";
