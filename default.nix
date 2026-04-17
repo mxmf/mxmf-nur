@@ -16,6 +16,7 @@
 
   trzsz-go = pkgs.callPackage ./pkgs/trzsz-go { };
   texslide = pkgs.callPackage ./pkgs/texslide { };
+  syncclipboard = pkgs.callPackage ./pkgs/syncclipboard { };
 
   # example-package = pkgs.callPackage ./pkgs/example-package { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
