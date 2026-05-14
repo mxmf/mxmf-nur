@@ -25,16 +25,16 @@ in
 rustPlatform.buildRustPackage
   (finalAttrs: {
     pname = "easytier";
-    version = "2.6.3";
+    version = "2.6.4";
 
     src = fetchFromGitHub {
       owner = "EasyTier";
       repo = "EasyTier";
       tag = "v${finalAttrs.version}";
-      hash = "sha256-hkzpztxg3hU57oCm2zL3U8BUyZrUkhOa3oGwcQngzE8=";
+      hash = "sha256-lwqpOVKFm85AiBb7NWLAkjSrWSe5pzF0AuEmmDo+v0k=";
     };
 
-    cargoHash = "sha256-FNrWO0PwpyHmitovkwao1b77owbEAw0devfc5auEWKY=";
+    cargoHash = "sha256-c+rOjokrL0U63s1CMfy6KlGI7VoSmtxuQjBNDAagSdg=";
 
     nativeBuildInputs = [
       protobuf
