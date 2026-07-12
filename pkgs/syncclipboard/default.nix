@@ -2,11 +2,11 @@
 
 stdenv.mkDerivation rec {
   pname = "sync-clipboard";
-  version = "3.1.5";
+  version = "3.1.8";
 
   src = fetchurl {
     url = "https://github.com/Jeric-X/SyncClipboard/releases/download/v${version}/SyncClipboard_linux_x64.deb";
-    hash = "sha256-/w8meG9WXk1A4A8vBCZWTnzncZZ9z1Wq0pN9j0Rd+EM=";
+    hash = "sha256-/E/JXWai7jSA4yGttA9M7Gh0rAs7t2icBTbYKWfNyL8=";
   };
 
 
