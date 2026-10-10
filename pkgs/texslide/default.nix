@@ -10,7 +10,7 @@ let
 
   src = fetchurl {
     url = "https://download.texslide.com/release/texslide-x64.AppImage";
-    hash = "sha256-3vjOTCl8UuVJc24vMFbnL9CwunB6kauvauCfdHKDpw8=";
+    hash = "sha256-Dw0wjBN4qPo+WqaGGJ9xfT78oNp+wUxxUEAN+4ejtUY=";
   };
 
 
